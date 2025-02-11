@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Housing Model</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+            body {
+                background-color: #222;
+                color: white;
+                font-family: Arial, sans-serif;
+                font-family: "Inter Tight", serif;
+            }
+
+            input[type="text"] {
+                width: 200px;
+                padding: 7px 10px;
+                font-size: 16px;
+                background-color: transparent;
+                color: white;
+                border: none;
+                border-bottom: 0.1em solid #444;
+                margin-bottom: 0.5em;
+            }
+
+            input[type="text"]:focus {
+                border-bottom: 0.1em solid #ddd;
+                outline: none;
+                font-weight: 700;
+            }
+
+            button {
+                background-color: #17191e;
+                color: white;
+                font-size: 16px;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+
+            .verdict {
+                font-size: 24px;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .predictedPrice {
+                color: rgb(56, 125, 237);
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <h1>House Price Prediction</h1>
+
+            <!-- Main Input For Receiving Query to our ML -->
+            <form action="{{ url_for('price_prediction')}}" method="post">
+                <input
+                    type="text"
+                    name="MedInc"
+                    placeholder="MedInc (Median Income)"
+                    value="7.8921"
+                    required="required"
+                />: Median Income<br />
+                <input
+                    type="text"
+                    name="HouseAge"
+                    placeholder="HouseAge"
+                    value="35.0"
+                    required="required"
+                />: House Age<br />
+                <input
+                    type="text"
+                    name="AveRooms"
+                    placeholder="AveRooms (Average Rooms)"
+                    value="7.102345"
+                    required="required"
+                />: Average Rooms<br />
+                <input
+                    type="text"
+                    name="AveBedrms"
+                    placeholder="AveBedrms (Average Bedrooms)"
+                    value="1.134567"
+                    required="required"
+                />: Average Bedrooms<br />
+                <input
+                    type="text"
+                    name="Population"
+                    placeholder="Population"
+                    value="500.0"
+                    required="required"
+                />: Population<br />
+                <input
+                    type="text"
+                    name="AveOccup"
+                    placeholder="AveOccup (Average Occupancy)"
+                    value="2.789012"
+                    required="required"
+                />: Average Occupancy<br />
+                <input
+                    type="text"
+                    name="Latitude"
+                    placeholder="Latitude"
+                    value="37.90"
+                    required="required"
+                />: Latitude<br />
+                <input
+                    type="text"
+                    name="Longitude"
+                    placeholder="Longitude"
+                    value="-122.25"
+                    required="required"
+                />: Longitude<br />
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-block btn-large"
+                >
+                    Predict
+                </button>
+            </form>
+
+            <br />
+            <br />
+        </div>
+        <div class="verdict">
+            The Predicted Price:
+            <span class="predictedPrice">$ {{predicted_price}} </span>mils
+        </div>
+    </body>
+</html>
