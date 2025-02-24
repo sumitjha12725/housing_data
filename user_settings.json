@@ -1,0 +1,100 @@
+{
+    "workbench.colorTheme": "Houston",
+    // "editor.fontFamily": "'MonoLisa'",
+    "editor.fontFamily": "'Google Sans Code'",
+    // "editor.fontFamily": "'Cascadia Code', Meno,Monaco, 'MonoLisa'",
+    "editor.mouseWheelZoom": true,
+    "editor.fontSize": 15,
+    "terminal.integrated.fontFamily": "'Monolisa'",
+    "editor.lineHeight": 1.7,
+    "workbench.sideBar.location": "left",
+    "debug.console.lineHeight": 1.2,
+    "terminal.integrated.lineHeight": 1.7,
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.cursorStyle": "line",
+    "tabnine.experimentalAutoImports": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4,
+    "window.commandCenter": false,
+    "breadcrumbs.enabled": true,
+    // "workbench.layoutControl.enabled": false, 
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.activityBar.location": "bottom",
+    "editor.scrollbar.horizontalScrollbarSize": 10,
+    "editor.scrollbar.verticalScrollbarSize": 9,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "material-icon-theme.hidesExplorerArrows": true,
+    // bottom status bar with git blame and WSL 
+    "workbench.statusBar.visible": true,
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    // "workbench.colorCustomizations": {
+    //     "editorSuggestWidget.selectedBackground": "#231739",
+    //     "sideBar.background": "#140E1A",
+    //     "list.activeSelectionBackground": "#231739",
+    //     "list.activeSelectionForeground": "#fff",
+    //     "list.inactiveSelectionBackground": "#231739",
+    //     "list.inactiveSelectionForeground": "#c7aeff",
+    //     "list.focusBackground": "#231739",
+    //     "list.hoverBackground": "#231739",
+    //     "list.hoverForeground": "#fff",
+    // },
+    "editor.overviewRulerBorder": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.inlineSuggest.fontFamily": "'Mono Lisa', 'Dank Mono'",
+    "editor.fontLigatures": true,
+    "explorer.compactFolders": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.minimap.autohide": true,
+    "editor.minimap.renderCharacters": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "inlineFold.unfoldedOpacity": 1,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "code-runner.runInTerminal": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "explorer.confirmDelete": false,
+    "vscode_custom_css.statusbar": true,
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.fontLigatures": true,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "terminal.integrated.fontSize": 13,
+}
